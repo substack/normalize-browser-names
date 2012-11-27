@@ -2,6 +2,8 @@
 
 normalize browser names
 
+[![build status](https://secure.travis-ci.org/substack/normalize-browser-names.png)](http://travis-ci.org/substack/normalize-browser-names)
+
 # example
 
 ``` js
