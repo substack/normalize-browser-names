@@ -19,6 +19,7 @@ module.exports = function normalize (browsers) {
         var name = {
             ie : 'iexplore',
             iexplore : 'iexplore',
+            iexplorer : 'iexplore',
             explorer : 'iexplore',
             explore : 'iexplore',
             'internet explorer' : 'iexplore',
