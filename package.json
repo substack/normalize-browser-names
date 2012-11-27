@@ -1,0 +1,32 @@
+{
+    "name" : "normalize-browser-names",
+    "version" : "0.0.0",
+    "description" : "normalize browser names",
+    "main" : "index.js",
+    "bin" : {},
+    "directories" : {
+        "example" : "example",
+        "test" : "test"
+    },
+    "devDependencies" : {
+        "tape" : "~0.0.4"
+    },
+    "scripts" : {
+        "test" : "tap test/*.js"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/normalize-browser-names.git"
+    },
+    "homepage" : "https://github.com/substack/normalize-browser-names",
+    "keywords" : [
+        "browser",
+        "naming"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT"
+}
