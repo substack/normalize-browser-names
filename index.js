@@ -45,7 +45,7 @@ function numeric(versions) {
 /// assumes array of versions is already sorted
 function latest(versions) {
     if (!versions || versions.length === 0) {
-        throw new Error('\'' + name + '\' version requires suppored browsers argument');
+        throw new Error('\'' + versions + '\' version requires suppored browsers argument');
     }
 
     return versions.reduce(function(prev, curr) {
@@ -114,6 +114,7 @@ module.exports = function normalize (browsers, supported) {
         var name = normalized_name(key);
         
         if (name) acc[name] = vs.map(function (v) {
+            if (v === 'latest') v = latest(supported[key]);
             if (typeof v === 'number' || /^\d+(?:\.\d*)?/.test(v)) {
                 if (/\.$/.test(v)) return v + '0';
                 if (!/\./.test(v)) return v + '.0';
