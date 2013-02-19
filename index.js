@@ -30,6 +30,8 @@ module.exports = function normalize (browsers) {
             firefox : 'firefox',
             ff : 'firefox',
             opera : 'opera',
+            iphone : 'iphone',
+            ipad : 'ipad'
         }[key.toLowerCase()];
         
         if (name) acc[name] = vs.map(function (v) {
