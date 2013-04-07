@@ -15,7 +15,8 @@ var names = {
     ff : 'firefox',
     opera : 'opera',
     iphone : 'iphone',
-    ipad : 'ipad'
+    ipad : 'ipad',
+    android : 'android'
 };
 
 /// normalize browser name from user input
