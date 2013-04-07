@@ -88,10 +88,10 @@ module.exports = function normalize (browsers, supported) {
                 var end_idx = versions.indexOf(end);
 
                 if (end_idx < start_idx) {
-                    throw new Error('range must be increasing order');
+                    throw new Error('range must be increasing order: ' + bv);
                 }
                 else if (start_idx < 0 || end_idx < 0) {
-                    throw new Error('invalid range');
+                    throw new Error('invalid range: ' + bv);
                 }
 
                 acc[b].push.apply(acc[b], versions.slice(start_idx, end_idx + 1));
