@@ -16,7 +16,8 @@ var names = {
     opera : 'opera',
     iphone : 'iphone',
     ipad : 'ipad',
-    android : 'android'
+    android : 'android-browser',
+    android-browser : 'android-browser'
 };
 
 /// normalize browser name from user input
