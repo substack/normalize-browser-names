@@ -45,7 +45,7 @@ function numeric(versions) {
 /// assumes array of versions is already sorted
 function latest(versions) {
     if (!versions || versions.length === 0) {
-        throw new Error('\'' + versions + '\' version requires suppored browsers argument');
+        throw new Error('\'' + versions + '\' version requires supported browsers argument');
     }
 
     return versions.reduce(function(prev, curr) {
